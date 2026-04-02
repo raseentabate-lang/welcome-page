@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Widget</title>
+  </head>
+  <body>
+
+  <section
+        class="buktor-container"
+        data-url="https://www.buktor.com"
+        data-slug="abateeyehospital"
+        data-type="appointment"
+        data-lead-id = ""
+        data-location=""
+        data-category=""
+        data-service=""
+        data-patient-name=""
+        data-patient-age=""
+        data-patient-phone=""
+        data-booking-date=""
+        data-patient-mrno=""  
+        data-date-view="calender"
+        data-base-url="https://abateodoo.zinfog.in"
+        data-appointment-id=""
+        data-appointment-callback-id=""
+        data-appointment-details-button=""
+        data-otp-required="false"
+        ></section>
+      
+      <script
+        type="text/javascript"
+        src="https://buktor.com/assets/abate-embed.js"
+      ></script>
+      <script>
+        document.addEventListener("Success", function (event) {
+          // pass event.details the storing function
+          // console.log(event);
+        });
+
+        document.addEventListener("Failed", function (event) {
+          // pass event.details the storing function
+        });
+
+        document.addEventListener("Updated", function (event) {
+          // pass event.details the storing function
+        });
+      </script> 
+  </body>
+</html>
