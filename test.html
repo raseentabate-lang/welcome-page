@@ -3,69 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      
-      body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      .container {
-        text-align: center;
-        background: white;
-        padding: 60px 40px;
-        border-radius: 10px;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-        max-width: 600px;
-        width: 90%;
-      }
-      
-      h1 {
-        color: #667eea;
-        font-size: 3em;
-        margin-bottom: 20px;
-      }
-      
-      p {
-        color: #666;
-        font-size: 1.1em;
-        line-height: 1.6;
-        margin-bottom: 30px;
-      }
-      
-      .btn {
-        display: inline-block;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
-        padding: 12px 30px;
-        text-decoration: none;
-        border-radius: 5px;
-        font-size: 1em;
-        transition: transform 0.3s, box-shadow 0.3s;
-        border: none;
-        cursor: pointer;
-      }
-      
-      .btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
-      }
-    </style>
+    <title>Test Widget</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Welcome! 👋</h1>
-      <p>Hello and thank you for visiting. This is a simple welcome page created for you.</p>
-      <button class="btn" onclick="alert('Welcome to the site!')">Get Started</button>
-    </div>
+
+  <section
+        class="buktor-container"
+        data-url="https://www.buktor.com"
+        data-slug="abateeyehospital"
+        data-type="appointment"
+        data-lead-id = "12345678"
+        data-location=""
+        data-category=""
+        data-service=""
+        data-patient-name=""
+        data-patient-age=""
+        data-patient-phone=""
+        data-booking-date=""
+        data-patient-mrno=""  
+        data-date-view="calender"
+        data-base-url="https://abateodoo.zinfog.in"
+        data-appointment-id=""
+        data-appointment-callback-id=""
+        data-appointment-details-button=""
+        data-otp-required="false"
+        ></section>
+      
+      <script
+        type="text/javascript"
+        src="https://buktor.com/assets/abate-embed.js"
+      ></script>
+      <script>
+        document.addEventListener("Success", function (event) {
+          // pass event.details the storing function
+          // console.log(event);
+        });
+
+        document.addEventListener("Failed", function (event) {
+          // pass event.details the storing function
+        });
+
+        document.addEventListener("Updated", function (event) {
+          // pass event.details the storing function
+        });
+      </script> 
   </body>
+</html>
